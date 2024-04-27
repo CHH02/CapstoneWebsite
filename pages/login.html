@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/login-style.css">
+    <link rel="stylesheet" href="/CapstoneWebsite/styles/login-style.css">
     <title>PRISM | Login</title>
 </head>
 <body>
@@ -12,8 +12,8 @@
             <div class="Group-Content">
                 <div class="Group-Logo">
                     <!-- logo and picture here -->
-                    <a href="/index.html">
-                        <img src="/assets/OIG4-grey-variant.png" alt="Diamond logo for PRISM">
+                    <a href="/CapstoneWebsite/index.html">
+                        <img src="/CapstoneWebsite/assets/OIG4-grey-variant.png" alt="Diamond logo for PRISM">
                     </a>
                 </div>
                 <div class="Login-Text">
@@ -27,7 +27,7 @@
                     <div class="Group-Password">
                         <label for="pass">Password:</label><br>
                         <input type="password" placeholder="Enter Password" id="pass" name="pass" required>
-                        <img src="/assets/show.png" alt="password visivility icon" id="togglePassword">
+                        <img src="/CapstoneWebsite/assets/show.png" alt="password visivility icon" id="togglePassword">
                         <!-- <span class="tooltip">"tooltip text"</span> -->
                     </div>
                     <div class="Login-Btn">
@@ -35,7 +35,7 @@
                     </div>
                 </form>
                 <div class="Group-SignUp" id="SignUp">
-                    <p>Don't Have An Account? <a href="signup.html">Sign Up</a></p>
+                    <p>Don't Have An Account? <a href="/CapstoneWebsite/signup.html">Sign Up</a></p>
                 </div>
             </div>
         </div>
@@ -50,10 +50,10 @@
             togglePasswordVisibility();
  
             // Toggle the eye slash icon 
-            if (togglePassword.src.match("/assets/hide.png")) {
-                togglePassword.src = "/assets/show.png";
+            if (togglePassword.src.match("/CapstoneWebsite/assets/hide.png")) {
+                togglePassword.src = "/CapstoneWebsite/assets/show.png";
             } else {
-                togglePassword.src = "/assets/hide.png";
+                togglePassword.src = "/CapstoneWebsite/assets/hide.png";
             }
         }); 
         function togglePasswordVisibility() {
@@ -66,7 +66,7 @@
         }
 
         function loginFunction() {
-            location.replace("/pages/second.html");
+            location.replace("/CapstoneWebsite/pages/second.html");
         }
     </script>
 </body>
